@@ -1,0 +1,57 @@
+GET http://localhost:8080/api/v1/accounts
+
+###
+
+GET http://localhost:8080/api/v1/accounts?page=0&size=10&sort=id
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Andrew",
+  "lastName": "Ganiyev",
+  "email": "andrew@gmail.com",
+  "password": "Qwerty008"
+}
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+
+###
+
+POST http://localhost:8080/api/v1/orders
+Content-Type: application/json
+
+{
+  "accountId": 1,
+  "date": "2022-01-01"
+}
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1/orders
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "Sidikov",
+  "email": "sidikov",
+  "password": "qwerty007"
+}
+
+###
+
+POST http://localhost:8080/api/v1/orders
+Content-Type: application/json
+
+{
+  "accountId": null,
+  "date": "2022-13-01"
+}
