@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: lesson42-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: shop_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty007
+    volumes:
+      - lesson42-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  lesson42-postgres-data:

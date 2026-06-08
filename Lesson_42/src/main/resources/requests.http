@@ -1,0 +1,12 @@
+GET localhost:8080/Lesson_42_war/api/v1/accounts
+
+###
+
+POST localhost:8080/Lesson_42_war/api/v1/accounts
+Content-Type: application/json
+
+{
+  "firstName": "User",
+  "lastName": "User2",
+  "email": "User3_email"
+}
